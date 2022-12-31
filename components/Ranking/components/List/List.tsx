@@ -5,7 +5,7 @@ import { IList } from "./List.types";
 
 export const List = (props: FC<IList>) => {
   return (
-    <Styled.List>
+    <Styled.List className="ranking">
       {props.data?.map((item) => (
         <Item
           key={item.id}

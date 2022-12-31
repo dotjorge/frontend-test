@@ -9,48 +9,49 @@ const Item = styled.li`
   list-style-type: none;
   gap: 20px;
   padding: 10px;
-
   &:nth-of-type(2) {
     background: #f2f1f1;
   }
 
+  .ranking__item__photo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #ba3538;
+    border-radius: 100%;
+  }
+
+  .ranking__item__info {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .ranking__item__info__name {
+      color: red;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .ranking__item__info__description {
+      color: gray;
+      margin: 0;
+    }
+  }
+
   &:hover {
     background: #b93537;
+
+    .ranking__item__photo {
+      border-color: white;
+    }
+
+    .ranking__item__info {
+      .ranking__item__info__name {
+        color: white;
+      }
+    }
   }
 `;
 
-const Photo = styled.span`
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border: 4px solid #ba3538;
-  border-radius: 100%;
-
-  ${Item}:hover & {
-    border-color: white;
-  }
-`;
-
-const Info = styled.div`
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  align-items: flex-start;
-`;
-
-const Title = styled.p`
-  color: red;
-  margin: 0;
-  font-weight: bold;
-
-  ${Item}:hover & {
-    color: white;
-  }
-`;
-
-const SubTitle = styled.p`
-  color: gray;
-  margin: 0;
-`;
-
-export default { Item, Info, Title, SubTitle, Photo };
+export default { Item };
