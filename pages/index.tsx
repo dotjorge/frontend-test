@@ -1,12 +1,33 @@
 import { GetServerSideProps } from "next";
-import { Fazenda, FC } from "types";
-
+import { Fazenda, FC, FazendaDataItem } from "types";
+import { Ranking } from "components";
+import { IItem } from "components/Ranking/components/Item/Item.types";
+import { fotos } from "mocks/fotos";
 interface PageProps {
   fazenda: Fazenda;
 }
 
 const Index = (props: FC<PageProps>) => {
-  return <>{JSON.stringify(props.fazenda)}</>;
+  const getPicture = {
+    "Rita Cadillac": fotos.RitaCadillac,
+    Gominho: fotos.Gominho,
+    "Yudi Tamashiro": fotos.YudiTamashiro,
+    "Andressa Urach": fotos.AndressaUrach,
+    "Bárbara Evans": fotos.BarbaraEvans,
+  };
+
+  const fazenda: IItem[] = props.fazenda.data.map((item) => {
+    return {
+      id: item.__id,
+      picture: getPicture[item.name],
+      name: item.name,
+      description: item.description,
+      positive: Number(item.positive),
+      negative: Number(item.negative),
+    };
+  });
+
+  return <Ranking data={fazenda} />;
 };
 
 export default Index;
