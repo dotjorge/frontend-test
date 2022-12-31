@@ -6,3 +6,7 @@ export interface IItem {
   positive: number;
   negative: number;
 }
+
+export type IRankingItem = IItem & {
+  position: number;
+};
