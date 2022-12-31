@@ -22,12 +22,16 @@ const Index = (props: FC<PageProps>) => {
       picture: getPicture[item.name],
       name: item.name,
       description: item.description,
-      positive: Number(item.positive),
-      negative: Number(item.negative),
+      positive: Number(item.positive) || 0,
+      negative: Number(item.negative) || 0,
     };
   });
 
-  return <Ranking data={fazenda} />;
+  return (
+    <>
+      <Ranking data={fazenda} />
+    </>
+  );
 };
 
 export default Index;
