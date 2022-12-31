@@ -2,7 +2,7 @@ import Styled from "./List.styles";
 import { FC } from "types";
 import { Item } from "../";
 import { IList } from "./List.types";
-import { getPercent } from "../functions";
+import { getPercent } from "../../functions";
 
 export const List = (props: FC<IList>) => {
   const { data } = props;

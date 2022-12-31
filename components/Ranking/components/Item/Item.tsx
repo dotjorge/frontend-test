@@ -2,7 +2,7 @@ import Styled from "./Item.styles";
 import Image from "next/image";
 import { FC } from "types";
 import { IRankingItem } from "./Item.types";
-import { getPercent } from "../functions";
+import { getPercent } from "../../functions";
 
 export const Item = (props: FC<IRankingItem>) => {
   const { positive, negative, position } = props;
