@@ -1,8 +1,43 @@
 import styled from "styled-components";
 
-const Item = styled.li`
-  width: 340px;
-  height: 80px;
+const Ranking = styled.div`
+  padding: 140px 40px;
+
+  .ranking__header {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    .ranking__header__title__logo {
+      position: absolute;
+      width: 179px;
+      height: 179px;
+      aspect-ratio: 1;
+      bottom: -8px;
+      left: -25px;
+      z-index: 5;
+      flex: 1;
+
+      .ranking__header__title__logo__img {
+        object-fit: contain;
+      }
+    }
+
+    .ranking__header__title {
+      position: relative;
+      min-width: 100%;
+      /* font-size: 30px; */
+      font-size: clamp(1em, 1em + 1vw, 30px);
+      background: white;
+      color: #272727;
+      border-radius: 10px;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+      padding-left: 120px;
+      flex: 0;
+    }
+  }
 `;
 
-export default { Item };
+export default { Ranking };
