@@ -3,6 +3,7 @@ import { Fazenda, FC, FazendaDataItem } from "types";
 import { Ranking } from "components";
 import { IItem } from "components/Ranking/components/Item/Item.types";
 import { fotos } from "mocks/fotos";
+import Head from "next/head";
 interface PageProps {
   fazenda: Fazenda;
 }
@@ -29,6 +30,10 @@ const Index = (props: FC<PageProps>) => {
 
   return (
     <>
+      <Head>
+        <title>A Fazenda - R7</title>
+        <meta property="og:title" content="A Fazenda - R7" key="title" />
+      </Head>
       <Ranking data={fazenda} />
     </>
   );
