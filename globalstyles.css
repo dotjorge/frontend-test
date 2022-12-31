@@ -1,0 +1,25 @@
+html {
+  display: flex;
+  height: 100vh;
+  /* min-height: 100vw; */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Arial";
+  background: #272727;
+}
+
+* {
+  box-sizing: border-box;
+}
