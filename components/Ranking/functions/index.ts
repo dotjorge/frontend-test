@@ -1,1 +1,1 @@
-export { getPercent } from "./getPercent";
+export { getPercent } from "./getPercent/getPercent";
