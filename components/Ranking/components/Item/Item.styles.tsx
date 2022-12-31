@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const Item = styled.li`
+  --primary_125: #ba3638;
+  --primary: #ba3538;
+  --primary_75: #b93537;
+  --primary_25: #330d0e;
+  --white: #ffffff;
+  --white_50: #909090;
   width: 340px;
   height: 80px;
   display: flex;
@@ -9,46 +15,52 @@ const Item = styled.li`
   list-style-type: none;
   gap: 20px;
   padding: 10px;
+  cursor: default;
+
   &:nth-of-type(2) {
-    background: #f2f1f1;
+    background: var(--white);
   }
 
   .ranking__item__photo {
     position: relative;
     width: 50px;
     height: 50px;
-    border: 4px solid #ba3538;
+    border: 4px solid var(--primary);
     border-radius: 100%;
   }
 
   .ranking__item__info {
     display: flex;
-    gap: 10px;
+    gap: 2px;
     flex-direction: column;
     align-items: flex-start;
 
     .ranking__item__info__name {
-      color: red;
+      color: var(--primary_125);
       margin: 0;
       font-weight: bold;
     }
 
     .ranking__item__info__description {
-      color: gray;
+      color: var(--white_50);
       margin: 0;
     }
   }
 
   &:hover {
-    background: #b93537;
+    background: var(--primary_75);
 
     .ranking__item__photo {
-      border-color: white;
+      border-color: var(--white);
     }
 
     .ranking__item__info {
       .ranking__item__info__name {
-        color: white;
+        color: var(--white);
+      }
+
+      .ranking__item__info__description {
+        color: var(--primary_25);
       }
     }
   }
