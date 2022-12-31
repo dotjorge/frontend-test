@@ -30,6 +30,7 @@ const Ranking = styled.div`
       font-size: clamp(1em, 1em + 1vw, 30px);
       background: white;
       color: #272727;
+      font-weight: 800;
       border-radius: 10px;
       display: flex;
       justify-content: flex-end;
