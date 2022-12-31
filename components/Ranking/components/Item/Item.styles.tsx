@@ -120,12 +120,12 @@ const Item = styled.li`
       // Left arrow
       &:first-of-type {
         &:before {
-          --size: 10px;
+          --size: 6px;
           content: "";
           position: absolute;
           left: calc((var(--size) * -2));
-          border: 10px solid transparent;
-          border-right: 10px solid var(--white);
+          border: var(--size) solid transparent;
+          border-right: var(--size) solid var(--white);
         }
       }
 
