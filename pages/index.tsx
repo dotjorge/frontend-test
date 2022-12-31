@@ -11,7 +11,9 @@ interface PageProps {
 }
 
 const Index = (props: FC<PageProps>) => {
-  const fazenda: IItem[] = props.fazenda.data.map((item) => {
+  const { fazenda } = props;
+
+  const formatedFazenda: IItem[] = fazenda?.data?.map((item) => {
     return {
       id: item.__id,
       picture: getPicture[item.name] || null,
@@ -28,7 +30,7 @@ const Index = (props: FC<PageProps>) => {
         <title>A Fazenda - R7</title>
         <meta property="og:title" content="A Fazenda - R7" key="title" />
       </Head>
-      <Ranking data={fazenda} />
+      <Ranking data={formatedFazenda} />
     </>
   );
 };
