@@ -33,11 +33,13 @@ const Ranking = styled.div`
       background: white;
       color: #272727;
       font-weight: 800;
+      letter-spacing: -1.5px;
       border-radius: 10px;
       display: flex;
       justify-content: flex-end;
       padding: 10px;
       padding-left: 120px;
+      padding-right: 34px;
       flex: 0;
     }
   }
