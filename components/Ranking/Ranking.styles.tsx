@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 const Ranking = styled.div`
   padding: 140px 40px;
+  max-width: 430px;
+  width: 100%;
 
   .ranking__header {
     position: relative;
