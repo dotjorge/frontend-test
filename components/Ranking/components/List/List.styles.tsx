@@ -4,7 +4,7 @@ const List = styled.ol`
   width: fit-content;
   padding: 0;
   border-radius: 2px;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 export default { List };
