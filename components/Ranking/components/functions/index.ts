@@ -1,0 +1,1 @@
+export { getPercent } from "./getPercent";
