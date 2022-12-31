@@ -27,6 +27,26 @@ const Item = styled.li`
     height: 50px;
     border: 4px solid var(--primary);
     border-radius: 100%;
+
+    .ranking__item__photo__bullet {
+      --size: 20px;
+      --offset: 5px;
+      position: absolute;
+      width: var(--size);
+      height: var(--size);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--white_50);
+      right: var(--offset);
+      bottom: var(--offset);
+      background: var(--white);
+      border: 1px solid var(--white_50);
+      border-radius: 100%;
+      transform: translate(50%, 50%);
+    }
   }
 
   .ranking__item__info {
