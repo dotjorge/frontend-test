@@ -73,12 +73,15 @@ const Item = styled.li`
     .ranking__item__info__name {
       color: var(--primary_125);
       margin: 0;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 18px;
     }
 
     .ranking__item__info__description {
       color: var(--white_50);
       margin: 0;
+      font-size: 12px;
+      font-weight: 600;
     }
   }
 
