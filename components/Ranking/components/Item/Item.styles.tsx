@@ -38,8 +38,8 @@ const Item = styled.li`
 
   .ranking__item__photo {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 66px;
+    height: 66px;
     border: 4px solid var(--primary);
     border-radius: 100%;
 
