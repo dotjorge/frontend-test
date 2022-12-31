@@ -12,7 +12,7 @@ export const Item = (props: FC<IRankingItem>) => {
   return (
     <Styled.Item className="ranking__item">
       <div className="ranking__item__photo">
-        <Image src={props.picture} alt={props.name} fill />
+        {props.picture && <Image src={props.picture} alt={props.name} fill />}
         <span className="ranking__item__photo__bullet">{position + 1}</span>
       </div>
       <div className="ranking__item__info">
