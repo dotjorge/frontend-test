@@ -75,6 +75,7 @@ const Item = styled.li`
       margin: 0;
       font-weight: 600;
       font-size: 18px;
+      letter-spacing: -0.5px;
     }
 
     .ranking__item__info__description {
