@@ -4,6 +4,8 @@ import { Ranking } from "components";
 import { IItem } from "components/Ranking/components/Item/Item.types";
 import { fotos } from "mocks/fotos";
 import Head from "next/head";
+import { decode as decodeHTML } from "html-entities";
+
 interface PageProps {
   fazenda: Fazenda;
 }
@@ -21,8 +23,8 @@ const Index = (props: FC<PageProps>) => {
     return {
       id: item.__id,
       picture: getPicture[item.name],
-      name: item.name,
-      description: item.description,
+      name: decodeHTML(item.name),
+      description: decodeHTML(item.description),
       positive: Number(item.positive) || 0,
       negative: Number(item.negative) || 0,
     };
