@@ -1,1 +1,1 @@
-export { getPicture } from "./getPicture";
+export { getPicture } from "./functions/getPicture";
