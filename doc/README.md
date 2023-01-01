@@ -205,6 +205,8 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async () => {
 
 ## 🚀 Rodar o projeto
 
+> Não estar rodando nenhum outro projeto na porta 3000 é obrigatório
+
 O projeto precisa apenas de um comando pra ser rodado, que é:
 
 ```sh
