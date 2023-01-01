@@ -2,6 +2,15 @@
 
 > Essa é a documentação do meu teste pra vaga front-end no R7
 
+## Sumário
+
+<details open>
+<summary>Ir para</summary>
+
+- [Stack Usada](#stack-usada)
+
+</details>
+
 ## Stack usada
 
 A Stack escolhida foi Next.js (Full-stack) na versão 13 com TypeScript, com tudo instalado do zero (sem `create-next-app`). E a razão disso é que hoje ela é a Stack que eu mais domino e utilizo, então quis mostrar um pouco do que eu mais sei.
