@@ -1,11 +1,11 @@
 <h1 align="center">Olá Record 👋</h1>
 
-> Essa é a documentação do meu teste pra vaga front-end no R7
+> Essa é a documentação do meu teste para a vaga front-end no R7
 
 ## 📌 Sumário
 
 <details open>
-<summary>Ir para</summary>
+<summary>Ir para:</summary>
 
 - [💻 Stack usada](#-stack-usada)
 - [🧥 Estilização](#-estilização)
@@ -75,19 +75,21 @@ Por padrão os estilos styled-components não são `server-side` (mesmo com o Ne
 
 Pra testes está sendo utilizado `Jest` através da biblioteca `react-testing-library`, também com TypeScript.
 
-Para rodar todos os testes, use o comando:
+Para rodar **todos os testes**, use o comando:
 
 ```sh
 npm run tests
 ```
 
-Para rodar testes especificos, o comando:
+Para rodar **testes especificos**, o comando:
 
 ```sh
 npm run tests ./diretorio-com-teste(s)
 ```
 
-E para entrar no modo watch (rodar todos os testes ao salvar um arquivo de teste):
+E para entrar no **modo watch**:
+
+> Rodar todos os testes ao salvar um arquivo de teste
 
 ```sh
 npm run test
@@ -109,7 +111,7 @@ Além disso, também estão presentes como depêndencia para o uso do TypeScript
 
 > Backend no próprio front/Next.js
 
-Como no Next.js é possível fazer também fazer rotas backend, e eu acho isso incrível, resolvi mostrar um pouco sobre como funciona.
+Como no Next.js também é possível fazer rotas backend, e eu acho isso incrível, resolvi mostrar um pouco sobre como funciona.
 
 Diferente do React, as rotas do Next.js são os próprios arquivos dos componentes em pastas dentro da pasta pages, de forma hierarquica, com a pagina inicial sendo um `index.tsx` na raiz dela (`pages/index.tsx`).
 
@@ -121,7 +123,7 @@ Uma rota /balanco-geral por exemplo seria:
     - santos-e-regiao
       - index.tsx
 
-Já as rotas API ficam em pages/api, e podem seguir o mesmo padrão de hierarquia. No caso especifico foi feito um arquivo `pages/api/fazenda.tsx` diretamente por não haver necessidade de nesting/hierarquia.
+Já as rotas API ficam em `pages/api`, e podem seguir o mesmo padrão de hierarquia. No caso especifico foi feito um arquivo `pages/api/fazenda.tsx` diretamente por não haver necessidade de nesting/hierarquia.
 
 Uma rota API Next.js é uma função exportada por padrão (obrigatoriamente) com qualquer nome, que recebe sempre os parametros req e res, nessa ordem. Por exemplo:
 
