@@ -1,6 +1,6 @@
-### A Stack usada
+### Stack usada
 
-A Stack escolhida foi Next.js (Full-stack) na versão 13 com TypeScript, com tudo instalado do zero (sem create-next-app). E a razão por ela ter sido é porque hoje é a Stack que eu mais domino, então quis mostrar um pouco do que eu mais sei.
+A Stack escolhida foi Next.js (Full-stack) na versão 13 com TypeScript, com tudo instalado do zero (sem create-next-app). E a razão disso é que hoje ela é a Stack que eu mais domino e utilizo, então quis mostrar um pouco do que eu mais sei.
 
 ### Estilização
 
@@ -45,7 +45,6 @@ const Componente = styled.div`
 `
 
 export default { Componente }
-
 ```
 
 Por padrão os estilos styled-components não são server-side (mesmo com o Next.js sendo por natureza), o que pode ocasionar inconsistencias no inicio do carregamento da página. Pra corrigir isso foi adicionado a configuração necessária no **\_document.tsx**, o que também permite que alguns estilos sejam carregados mesmo sem JavaScript.
@@ -132,7 +131,7 @@ Resposta ao bater em http://localhost:3000/api/fazenda:
     "positive": 51638022,
     "negative": 18143089
     }
-    /*...*/
+    ...
   ]
 }
 ```
@@ -146,4 +145,4 @@ npm run dev
 ```
 
 Depois disso já estará rodando tanto as rotas front-end quanto backend em:
-[http://localhost:300/](http://localhost:300/)
+[http://localhost:3000/](http://localhost:3000/)
