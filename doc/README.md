@@ -14,11 +14,13 @@ No JSX:
 import Styled from "./component.styles"
 
 export const Componente = (props) => {
-  <Styled.Componente className="padrão__bem">
-    <div className="padrão__bem__sass">
-      <div className="padrão__bem__sass__children">Olá Record</div>
-    </div>
-</Styled.Componente>
+  return (
+    <Styled.Componente className="padrão__bem">
+      <div className="padrão__bem__sass">
+        <div className="padrão__bem__sass__children">Olá Record</div>
+      </div>
+    </Styled.Componente>
+  )
 }
 ```
 
