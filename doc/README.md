@@ -1,4 +1,5 @@
 <h1 align="center">Olá Record 👋</h1>
+
 > Essa é a documentação do meu teste pra vaga front-end no R7
 
 ## Stack usada
