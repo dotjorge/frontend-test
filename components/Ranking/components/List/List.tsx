@@ -2,16 +2,12 @@ import Styled from "./List.styles";
 import { FC } from "types";
 import { Item } from "../";
 import { IList } from "./List.types";
-import { getPercent } from "../../functions";
+import { orderByPositive } from "../../functions";
 
 export const List = (props: FC<IList>) => {
   const { data } = props;
 
-  const orderedList = [...data].sort((a, b) => {
-    const currentItem = getPercent(a.positive, a.negative);
-    const acc = getPercent(b.positive, b.negative);
-    return acc.positive - currentItem.positive;
-  });
+  const orderedList = orderByPositive(data);
 
   return (
     <Styled.List className="ranking">
