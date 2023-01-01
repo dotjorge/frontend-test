@@ -115,10 +115,10 @@ Diferente do React, as rotas do Next.js são os próprios arquivos dos component
 
 Uma rota /balanco-geral por exemplo seria:
 
-- pages/
-  - balanco-geral/
+- pages
+  - balanco-geral
     - index.tsx
-    - santos-e-regiao/
+    - santos-e-regiao
       - index.tsx
 
 Já as rotas API ficam em pages/api, e podem seguir o mesmo padrão de hierarquia. No caso especifico foi feito um arquivo `pages/api/fazenda.tsx` diretamente por não haver necessidade de nesting/hierarquia.
