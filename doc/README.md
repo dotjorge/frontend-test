@@ -169,7 +169,36 @@ Visto que o caracter `º` vinha codificado como `&ordm;` do json, foi instalado 
 
 ## 🌐 getServerSideProps
 
-Feth server-side
+Um dos fetch's `server-side` nativo no Next.js, uma função que roda no lado do servidor a cada request (visitante) e traz a resposta da requisição já no HTML, que é o requisito mais importante pra SEO e o maior defeito do `React.js` pra isso.
+
+Sem isso o algoritimo da Google e outros buscadores não encontram nenhum texto referente ao conteúdo da página e nem mesmo tags HTML, que no `React` são geradas `client-side` quando há o uso de fetch.
+
+Exemplo de funcionamento:
+
+> pages/index.tsx
+
+```JSX
+const Index = (props: FC<PageProps>) => {
+  // Dados do fetch server-side (getServerSideProps) no objeto fazenda dentro das props
+  const { fazenda } = props;
+  //...
+}
+
+// Fetch server-side em toda request/acesso
+export const getServerSideProps: GetServerSideProps<PageProps> = async () => {
+  // Rota API dentro do próprio Next.js
+  const fazendaRes = await fetch("http://localhost:3000/api/fazenda");
+  const fazenda: Fazenda = await fazendaRes.json();
+
+  return {
+    // Faz um fetch server-side no json e passa como prop para a página atual (Index)
+    props: {
+      fazenda,
+    },
+  };
+};
+
+```
 
 ## 🚀 Rodar o projeto
 
