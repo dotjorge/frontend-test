@@ -66,7 +66,7 @@ const Componente = styled.div`
 export default { Componente }
 ```
 
-Por padrão os estilos styled-components não são `server-side` (mesmo com o Next.js sendo por natureza), o que pode ocasionar inconsistencias no inicio do carregamento da página. Pra corrigir isso foi adicionado a configuração necessária no **\_document.tsx**, o que também permite que alguns estilos sejam carregados mesmo sem JavaScript.
+Por padrão os estilos styled-components não são `server-side` (mesmo com o Next.js sendo por natureza), o que pode ocasionar inconsistencias no inicio do carregamento da página. Pra corrigir isso foi adicionado a configuração necessária no `_document.tsx`, o que também permite que alguns estilos sejam carregados mesmo sem JavaScript.
 
 ## Testes
 
@@ -108,7 +108,7 @@ Além disso, também estão presentes como depêndencia para o uso do TypeScript
 
 Como no Next.js é possível fazer também fazer rotas backend, e eu acho isso incrível, resolvi mostrar um pouco sobre como funciona.
 
-Diferente do React, as rotas do Next.js são os próprios arquivos dos componentes em pastas dentro da pasta pages, de forma hierarquica, com a pagina inicial sendo um index.tsx na raiz dela (pages/index.tsx).
+Diferente do React, as rotas do Next.js são os próprios arquivos dos componentes em pastas dentro da pasta pages, de forma hierarquica, com a pagina inicial sendo um `index.tsx` na raiz dela (`pages/index.tsx`).
 
 Uma rota /balanco-geral por exemplo seria:
 
@@ -118,7 +118,7 @@ Uma rota /balanco-geral por exemplo seria:
      - santos-e-regiao/
        - index.tsx
 
-Já as rotas API ficam em pages/api, e podem seguir o mesmo padrão de hierarquia. No caso especifico foi feito um arquivo pages/api/fazenda.tsx diretamente por não haver necessidade de nesting/hierarquia.
+Já as rotas API ficam em pages/api, e podem seguir o mesmo padrão de hierarquia. No caso especifico foi feito um arquivo `pages/api/fazenda.tsx` diretamente por não haver necessidade de nesting/hierarquia.
 
 Uma rota API Next.js é uma função exportada por padrão (obrigatoriamente) com qualquer nome, que recebe sempre os parametros req e res, nessa ordem. Por exemplo:
 
@@ -156,6 +156,16 @@ Resposta ao bater em http://localhost:3000/api/fazenda:
   ]
 }
 ```
+
+## Google Fonts
+
+A fonte Montserrat foi utilizada usando a dependência adicional do próprio Next.js chamada `@next/font`, assim ela é carregada server-side e sem fazer requisição no CDN da Google.
+
+## HTML Decode
+
+Visto que o caracter `º` vinha codificado como `&ordm;` do json, foi instalado uma biblioteca chamada `html-entities` pra decodificar (no front) e mostrar o caracter corretamente.
+
+> Também poderia ser feito no fetch do getServerSideProps ou na própria rota API
 
 ## 🚀 Rodar o projeto
 
