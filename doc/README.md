@@ -1,10 +1,13 @@
-### Stack usada
+<h1 align="center">Olá Record 👋</h1>
+> Essa é a documentação do meu teste pra vaga front-end no R7
 
-A Stack escolhida foi Next.js (Full-stack) na versão 13 com TypeScript, com tudo instalado do zero (sem create-next-app). E a razão disso é que hoje ela é a Stack que eu mais domino e utilizo, então quis mostrar um pouco do que eu mais sei.
+## Stack usada
 
-### Estilização
+A Stack escolhida foi Next.js (Full-stack) na versão 13 com TypeScript, com tudo instalado do zero (sem `create-next-app`). E a razão disso é que hoje ela é a Stack que eu mais domino e utilizo, então quis mostrar um pouco do que eu mais sei.
 
-Os estilos foram feitos usando a biblioteca styled-components com TypeScript, no seguinte padrão:
+## Estilização
+
+Os estilos foram feitos usando a biblioteca `styled-components` com TypeScript, no seguinte padrão:
 
 No JSX:
 
@@ -49,11 +52,11 @@ const Componente = styled.div`
 export default { Componente }
 ```
 
-Por padrão os estilos styled-components não são server-side (mesmo com o Next.js sendo por natureza), o que pode ocasionar inconsistencias no inicio do carregamento da página. Pra corrigir isso foi adicionado a configuração necessária no **\_document.tsx**, o que também permite que alguns estilos sejam carregados mesmo sem JavaScript.
+Por padrão os estilos styled-components não são `server-side` (mesmo com o Next.js sendo por natureza), o que pode ocasionar inconsistencias no inicio do carregamento da página. Pra corrigir isso foi adicionado a configuração necessária no **\_document.tsx**, o que também permite que alguns estilos sejam carregados mesmo sem JavaScript.
 
-### Testes
+## Testes
 
-Pra testes está sendo utilizado Jest através da biblioteca react-testing-library, também com TypeScript.
+Pra testes está sendo utilizado `Jest` através da biblioteca `react-testing-library`, também com TypeScript.
 
 Para rodar todos os testes, use o comando:
 
@@ -85,7 +88,7 @@ Além disso, também estão presentes como depêndencia para o uso do TypeScript
 - ts-jest
 - @types/jest
 
-### Rotas API (Backend no próprio front/Next.js)
+## Rotas API (Backend no próprio front/Next.js)
 
 Como no Next.js é possível fazer também fazer rotas backend, e eu acho isso incrível, resolvi mostrar um pouco sobre como funciona.
 
@@ -138,7 +141,7 @@ Resposta ao bater em http://localhost:3000/api/fazenda:
 }
 ```
 
-### Como rodar o projeto
+## 🚀 Rodar o projeto
 
 O projeto precisa apenas de um comando pra ser rodado, que é:
 
@@ -146,5 +149,6 @@ O projeto precisa apenas de um comando pra ser rodado, que é:
 npm run dev
 ```
 
-Depois disso já estará rodando tanto as rotas front-end quanto backend em:
+### Depois disso já estará rodando tanto as rotas front-end quanto backend em:
+
 [http://localhost:3000/](http://localhost:3000/)
