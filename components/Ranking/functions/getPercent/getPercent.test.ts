@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { getPercent } from "../getPercent/getPercent";
 
-describe("Home", () => {
+describe("Função Ranking > getPercent", () => {
   it("Deve retornar um objeto com as porcentagens corretas", () => {
     const percent = getPercent(50, 50);
 

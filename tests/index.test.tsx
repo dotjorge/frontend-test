@@ -31,7 +31,7 @@ describe("Home", () => {
     expect(rankingTitle).toBeInTheDocument();
   });
 
-  it("Deve transformar as props do backend para as props do componente Ranking", () => {
+  it("Deve renderizar o componente Ranking com as props do backend", () => {
     const mock = {
       version: "0.1.1",
       box_name: "A Fazenda - Ranking",
