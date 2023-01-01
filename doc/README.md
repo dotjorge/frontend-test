@@ -11,11 +11,15 @@ No JSX:
 > componente.tsx
 
 ```JSX
-<Styled.Componente className="padrão__bem">
+import Styled from "./component.styles"
+
+export const Componente = (props) => {
+  <Styled.Componente className="padrão__bem">
     <div className="padrão__bem__sass">
-      <div className="padrão__bem__sass__children"></div>
+      <div className="padrão__bem__sass__children">Olá Record</div>
     </div>
 </Styled.Componente>
+}
 ```
 
 Nos estilos:
@@ -39,6 +43,8 @@ const Componente = styled.div`
     }
   }
 `
+
+export default { Componente }
 
 ```
 
@@ -125,7 +131,8 @@ Resposta ao bater em http://localhost:3000/api/fazenda:
     "picture": "http://im.r7.com/record/files/2C96/1617/3F6E/32AE/013F/72F9/AD72/3CE1/RitaCadillac1.jpg",
     "positive": 51638022,
     "negative": 18143089
-    }...
+    }
+    //...
   ]
 }
 ```
