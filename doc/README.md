@@ -2,7 +2,7 @@
 
 > Essa é a documentação do meu teste pra vaga front-end no R7
 
-## Sumário
+## 📌 Sumário
 
 <details open>
 <summary>Ir para</summary>
@@ -15,11 +15,11 @@
 
 </details>
 
-## Stack usada
+## 💻 Stack usada
 
 A Stack escolhida foi Next.js (Full-stack) na versão 13 com TypeScript, com tudo instalado do zero (sem `create-next-app`). E a razão disso é que hoje ela é a Stack que eu mais domino e utilizo, então quis mostrar um pouco do que eu mais sei.
 
-## Estilização
+## 🧥 Estilização
 
 Os estilos foram feitos usando a biblioteca `styled-components` com TypeScript, no seguinte padrão:
 
@@ -68,7 +68,7 @@ export default { Componente }
 
 Por padrão os estilos styled-components não são `server-side` (mesmo com o Next.js sendo por natureza), o que pode ocasionar inconsistencias no inicio do carregamento da página. Pra corrigir isso foi adicionado a configuração necessária no `_document.tsx`, o que também permite que alguns estilos sejam carregados mesmo sem JavaScript.
 
-## Testes
+## 🚦 Testes
 
 Pra testes está sendo utilizado `Jest` através da biblioteca `react-testing-library`, também com TypeScript.
 
@@ -102,7 +102,7 @@ Além disso, também estão presentes como depêndencia para o uso do TypeScript
 - ts-jest
 - @types/jest
 
-## Rotas API
+## 🔙 Rotas API
 
 > Backend no próprio front/Next.js
 
@@ -157,15 +157,19 @@ Resposta ao bater em http://localhost:3000/api/fazenda:
 }
 ```
 
-## Google Fonts
+## 🔤 Google Fonts
 
 A fonte Montserrat foi utilizada usando a dependência adicional do próprio Next.js chamada `@next/font`, assim ela é carregada server-side e sem fazer requisição no CDN da Google.
 
-## HTML Decode
+## 🔧 HTML Decode
 
 Visto que o caracter `º` vinha codificado como `&ordm;` do json, foi instalado uma biblioteca chamada `html-entities` pra decodificar (no front) e mostrar o caracter corretamente.
 
 > Também poderia ser feito no fetch do getServerSideProps ou na própria rota API
+
+## 🌐 getServerSideProps
+
+Feth server-side
 
 ## 🚀 Rodar o projeto
 
