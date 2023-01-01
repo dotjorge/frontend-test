@@ -7,7 +7,11 @@
 <details open>
 <summary>Ir para</summary>
 
-- [Stack Usada](#stack-usada)
+- [Stack usada](#stack-usada)
+- [Estilização](#estilização)
+- [Testes](#testes)
+- [Rotas API](#rotas-api)
+- [Rodar o projeto](#-rodar-o-projeto)
 
 </details>
 
@@ -98,7 +102,9 @@ Além disso, também estão presentes como depêndencia para o uso do TypeScript
 - ts-jest
 - @types/jest
 
-## Rotas API (Backend no próprio front/Next.js)
+## Rotas API
+
+> Backend no próprio front/Next.js
 
 Como no Next.js é possível fazer também fazer rotas backend, e eu acho isso incrível, resolvi mostrar um pouco sobre como funciona.
 
