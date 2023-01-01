@@ -8,7 +8,7 @@ import AFazendaLogo from "/public/a-fazenda-logo.png";
 export const Ranking = (props: FC<IList>) => {
   return (
     <Styled.Ranking>
-      <div className="ranking__header">
+      <header className="ranking__header">
         <div className="ranking__header__title__logo">
           <Image
             className="ranking__header__title__logo__img"
@@ -18,7 +18,7 @@ export const Ranking = (props: FC<IList>) => {
           />
         </div>
         <h1 className="ranking__header__title">RANKING</h1>
-      </div>
+      </header>
       <List data={props.data} />
     </Styled.Ranking>
   );
