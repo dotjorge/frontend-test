@@ -27,8 +27,8 @@ const Index = (props: FC<PageProps>) => {
   return (
     <>
       <Head>
-        <title>A Fazenda - R7</title>
-        <meta property="og:title" content="A Fazenda - R7" key="title" />
+        <title>{fazenda.box_name}</title>
+        <meta property="og:title" content={fazenda.box_name} key="title" />
       </Head>
       <Ranking data={formatedFazenda} />
     </>
