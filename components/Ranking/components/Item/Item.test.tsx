@@ -23,6 +23,7 @@ describe("Componente Ranking > Item", () => {
     const { id, picture, position, positive, negative, ...rest } = itemProps;
     const percent = getPercent(positive, negative);
     const formatProps = {
+      // Bullet é o index + 1 pra não começar do zero
       position: position + 1,
       positive: `${percent.positive}%`,
       negative: `${percent.negative}%`,
