@@ -69,7 +69,7 @@ npm run tests ./diretorio-com-teste(s)
 E para entrar no modo watch (rodar todos os testes ao salvar um arquivo de teste):
 
 ```sh
-npm test
+npm run test
 ```
 
 As dependências são:
@@ -132,7 +132,7 @@ Resposta ao bater em http://localhost:3000/api/fazenda:
     "positive": 51638022,
     "negative": 18143089
     }
-    //...
+    /*...*/
   ]
 }
 ```
