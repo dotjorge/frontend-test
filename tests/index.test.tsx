@@ -2,11 +2,15 @@ import { render, screen } from "@testing-library/react";
 import Home from "pages/index";
 import "@testing-library/jest-dom";
 
+const HomeWithoutData = () => (
+  <Home fazenda={{ box_name: "", version: "1", data: [] }} />
+);
+
 describe("Home", () => {
   it("Deve renderizar", () => {
     render(
       <main>
-        <Home fazenda={{ data: [] }} />
+        <HomeWithoutData />
       </main>
     );
 
@@ -18,7 +22,7 @@ describe("Home", () => {
   it("Deve renderizar o componente Ranking mesmo com data sendo uma array vazia", () => {
     render(
       <main>
-        <Home fazenda={{ data: [] }} />
+        <HomeWithoutData />
       </main>
     );
 
