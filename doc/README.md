@@ -164,7 +164,7 @@ Resposta ao bater em http://localhost:3000/api/fazenda:
 
 ## 🔤 Google Fonts
 
-A fonte Montserrat foi utilizada usando a dependência adicional do próprio Next.js chamada `@next/font`, assim ela é carregada server-side e sem fazer requisição no CDN da Google.
+A fonte Montserrat foi utilizada com a dependência adicional do próprio Next.js chamada `@next/font`, assim ela é carregada server-side e sem fazer requisição no CDN da Google.
 
 ## 🔧 HTML Decode
 
